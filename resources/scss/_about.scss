@@ -1,0 +1,33 @@
+.about-section {
+    
+
+  .split-layout {
+    @include grid;   
+
+    & .side {
+      @include col-1-2;
+      height: 100vh;
+      position: relative;
+
+      .intro-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); 
+                text-align: center;
+      } 
+
+    }
+    & .side-left {
+      background: $main-blue;
+    }
+    & .side-right {
+      background: $main-red;
+    }
+
+  }
+
+}
+
+
