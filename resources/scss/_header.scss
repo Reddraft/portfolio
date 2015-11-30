@@ -1,5 +1,6 @@
 header {
   background: -webkit-linear-gradient(right, $main-blue, $main-blue-trans), url('../img/hero.jpg') no-repeat;
+  background: -moz-linear-gradient(right, $main-blue, $main-blue-trans), url('../img/hero.jpg') no-repeat;
   height: 100vh;
   background-size: cover;
   background-position: center;

@@ -1,33 +1,75 @@
 .about-section {
     
-
   .split-layout {
+    
     @include grid;   
-
+    
     & .side {
       @include col-1-2;
       height: 100vh;
       position: relative;
-
+      
       .intro-content {
         position: absolute;
         top: 50%;
         left: 50%;
+        text-align: center;
         -webkit-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%); 
-                text-align: center;
-      } 
+                transform: translate(-50%, -50%);
+        & .profile > img {
+          max-width: 100%;
+          border-radius: 50%;
+          opacity: .6;
+        }
 
-    }
+        h2 {
+          margin-top: 0.67em;
+          margin-bottom: 0.67em;
+          
+          span {
+
+            display: block;
+            white-space: nowrap;
+
+            &:nth-child(2) {
+              position: relative;
+              padding: .5rem;
+              margin-top: .8em;
+
+              &:nth-child(2):before {
+                position: absolute;
+                top: 0;
+                left: 25%;
+                width: 50%;
+                height: 2px;
+                background: #fff;
+                content: ''
+              }
+            } 
+
+          }//end split-layout intro content h2
+
+        } //end split-layout intro content h2
+
+      } // end split-layout intro content
+
+    } // end split-layout > .side
+
     & .side-left {
       background: $main-blue;
-    }
+    } // end split-layout > .side-left
+
     & .side-right {
       background: $main-red;
-    }
+    } // end split-layout > .side-right
 
-  }
 
-}
+
+  } //end split-layout
+
+} //end about-section
+
+
+
 
 
