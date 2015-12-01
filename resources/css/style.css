@@ -34,11 +34,21 @@ h2 {
   font-weight: 400;
   line-height: 100%; }
 
+p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 150%; }
+
 .intro-content h2 {
   text-transform: capitalize; }
   .intro-content h2 span:last-child {
     font-size: 1.2rem;
     font-weight: 300; }
+
+.page-inner h2 {
+  margin: 0 0 1em 0;
+  font-weight: 300;
+  font-size: 2.4em; }
 
 .main-nav li a:link, .main-nav li a:visited {
   color: #fff;
@@ -154,5 +164,24 @@ header {
     background: #34495E; }
   .about-section .split-layout .side-right {
     background: #EF3E3E; }
+  .about-section .split-layout .page {
+    width: 50%;
+    position: absolute;
+    height: 100vh;
+    color: #fff;
+    overflow: auto; }
+    .about-section .split-layout .page .page-inner {
+      padding: 2rem; }
+  .about-section .split-layout .page-left {
+    left: 0;
+    background: #3B6C9C;
+    text-align: right; }
+  .about-section .split-layout .page-right {
+    right: 0;
+    background: #E35D5B;
+    text-align: left; }
+
+section {
+  margin-bottom: 3rem; }
 
 /*# sourceMappingURL=style.css.map */

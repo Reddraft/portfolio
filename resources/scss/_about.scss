@@ -1,7 +1,6 @@
 .about-section {
     
   .split-layout {
-    
     @include grid;   
     
     & .side {
@@ -55,6 +54,8 @@
 
     } // end split-layout > .side
 
+
+
     & .side-left {
       background: $main-blue;
     } // end split-layout > .side-left
@@ -63,11 +64,45 @@
       background: $main-red;
     } // end split-layout > .side-right
 
+    & .page {
+      @include col-1-2;
+      position: absolute;
+      height: 100vh;
+      color: $white;
+      overflow: auto;
+
+      & .page-inner {
+        padding: 2rem;
+      }            
+    }
+    
+    & .page-left {
+        left: 0;
+        background: $secondary-blue;
+        text-align: right;
+        // -webkit-transform: translateX(-100%);
+        // transform: translateX(-100%);
+      }
+    & .page-right {
+        right: 0;
+        background: $secondary-red;
+        text-align: left;
+        // -webkit-transform: translateX(100%);
+        // transform: translateX(100%);
+      }      
 
 
   } //end split-layout
 
 } //end about-section
+
+section {
+  margin-bottom: 3rem;
+}
+
+
+
+
 
 
 
